@@ -1,8 +1,8 @@
-# README
-Hallo :)
+# Generelle Info
+Zusammenfassung von Dr. Peter Schulte's Vorlesung "Einführung in die theoretische Philosophie" (160-003a) vom HS22
 
-Alle nötigen Informationen zur Benutzung (ebenso wie die Lizenzbedingungen) sind dem kompilierten PDF zu entnehmen.
+# Gebrauch und Lizenz
+Ist der kompilierten Zusammenfassung zu entnehmen (Unterpunkt "Benutzungsanleitung").
 
-**Einen schönen Tag noch!**
-
-Andrin
+# Sponsor me
+Via dem Twint-QR Code in der Zusammenfassung (Unterpunkt "Benutzungsanleitung")!
