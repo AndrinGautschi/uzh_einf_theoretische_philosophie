@@ -1,0 +1,130 @@
+\title{Einf\"uhrung Theoretische Philosophie\\\underline{Zusammenfassung}}
+\author{
+	Andrin Gautschi \\
+	Universit\"at Z\"urich, \underline{Schweiz}\\
+}
+\date{\today}
+
+\documentclass[12pt]{report}
+
+% Fancier enumerations
+\usepackage{enumitem}[listparindent=0.7cm]
+
+% Some math functionality
+\usepackage{mathtools}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{adjustbox}
+
+% Correct positioning of tables
+\usepackage{flafter} 
+
+% Splitting and referencing subfiles
+\usepackage{subfiles}
+
+% Colored boxes inclusive some default boxes
+\usepackage{tcolorbox}
+\newtcolorbox{examplebox}{colback=blue!5!white, colframe=blue!75!black}
+\newtcolorbox{infobox}{colback=blue!5!white, colframe=blue!75!black}
+\newtcolorbox{warningbox}{colback=orange!5!white, colframe=orange!75!black} \newtcolorbox{errorbox}{colback=red!5!white, colframe=red!75!black}
+
+% Encoding, language and time settings
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{datetime}
+
+
+% Page settings
+\usepackage[paper=a4paper,top=1in,bottom=1in,right=0.5in,left=1.5in]{geometry}
+\usepackage{lipsum}
+\usepackage{txfonts}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+  
+
+
+
+% Correct positioning of floats around sections
+\usepackage{placeins}
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+\let\Oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}{\FloatBarrier\Oldsubsubsection}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+\begin{document}
+
+\newgeometry{margin=1in}
+\begin{titlepage}
+	\begin{center}
+        \vspace*{9cm}
+        \Huge\textbf{Zusammenfassung}\\
+        \vspace{0.5cm}
+        \LARGE Einführung Theoretische Philosophie   
+        \vspace{2cm}\\
+        \textbf{Andrin Gautschi}
+        \vfill
+        \Large
+        Philosophie\\
+        Universität Zürich\\
+        Schweiz\\
+        \today
+    \end{center}
+\end{titlepage}
+
+\newgeometry{top=1.2in, left=0.9in}
+
+\tableofcontents
+\newpage
+
+
+\chapter{Benutzungsanleitung}
+\subfile{sections/Benutzungsanleitung.tex}
+
+\chapter{Einführung}
+\subfile{sections/Einfuehrung.tex}
+
+\chapter{Personale Identität}
+\subfile{sections/Personale_Identitaet.tex}
+
+\chapter{Sprache und Bedeutung}\label{ChapterSpracheUndBedeutung}
+\subfile{sections/Sprache_und_Bedeutung.tex}
+
+\chapter{Sprache und Realität}
+\subfile{sections/Sprache_und_Realitaet.tex}
+
+\chapter{Wahrheit}
+\subfile{sections/Wahrheit.tex}
+
+\chapter{Universalien}
+\subfile{sections/Universalien.tex}
+
+\chapter{Wissen und Skeptizismus}
+\subfile{sections/Wissen_und_Skeptizismus.tex}
+
+\chapter{Dualismus}
+\subfile{sections/Dualismus.tex}
+
+\chapter{Materialismus}
+\subfile{sections/Materialismus.tex}
+
+\chapter{Können Computer denken?}
+\subfile{sections/Koennen_Computer_denken.tex}
+
+\chapter{Was ist Kunst?}
+\subfile{sections/Was_ist_Kunst.tex}
+
+\chapter{Verständnisfragen}
+\subfile{sections/Verstaendnisfragen.tex}
+\end{document}
