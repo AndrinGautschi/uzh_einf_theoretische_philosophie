@@ -13,9 +13,6 @@
 % Some math functionality
 \usepackage{mathtools}
 
-% Hyperlinks
-\usepackage{hyperref}
-
 % Graphics
 \usepackage{graphicx}
 \graphicspath{{./images/}}
@@ -50,7 +47,21 @@
   {}                % label
   {0pt}             % sep
   {\huge}           % before-code
+  
 
+
+
+% Correct positioning of floats around sections
+\usepackage{placeins}
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+\let\Oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}{\FloatBarrier\Oldsubsubsection}
+
+% Hyperlinks
+\usepackage{hyperref}
 
 \begin{document}
 
